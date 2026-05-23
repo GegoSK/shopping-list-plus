@@ -6,7 +6,7 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 
 ## Funkcie
 
-- **Vlastný panel** — plnohodnotný správca nákupného zoznamu priamo v HA
+- **Vlastný panel** — plnohodnotný správca produktov priamo v HA
 - **Dashboard karta** — kompaktná karta pre dashboard
 - **Skener čiarových kódov** — cez kameru mobilu (Companion app)
 - **Produkty s variantmi** — umožňuje vyplniť rôzne varianty produktu, rôznych výrobcov rovnakého produktu, kusy, objem alebo urobiť skupinu podobných produktov, napr. "Kuriacie mäso" varianty - "Krídla", "Stehná"
