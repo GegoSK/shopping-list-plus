@@ -1,6 +1,6 @@
 # 🛒 Shopping List Plus
 
-Pokročilá integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou pre Lovelace, skenerom čiarových kódov a podporou produktov s variantmi.
+Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou pre Lovelace, skenerom čiarových kódov a podporou produktov s variantmi.
 
 ---
 
