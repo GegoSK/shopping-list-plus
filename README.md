@@ -8,8 +8,8 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 
 - **Vlastný panel** — plnohodnotný správca produktov priamo v HA
 - **Dashboard karta** — kompaktná karta pre dashboard
-- **Skener čiarových kódov** — cez kameru mobilu (Companion app)
-- **Produkty s variantmi** — umožňuje vyplniť rôzne varianty produktu, rôznych výrobcov rovnakého produktu, kusy, objem alebo urobiť skupinu podobných produktov, napr. "Kuriacie mäso" varianty - "Krídla", "Stehná"
+- **Skener čiarových kódov** — cez kameru mobilu (Android Companion app)
+- **Produkty s variantmi** — umožňuje vyplniť rôzne varianty produktu, rôznych výrobcov rovnakého produktu, kusy, objem alebo urobiť skupinu podobných produktov, napr. "Kuriacie mäso" varianty - "Krídla", "Stehná", umožňuje pridadiť viac čiarovýc hkódov k jednému variantu
 - **Obľúbené položky** — rýchly prístup k často kupovaným produktom
 - **Kategórie** — farebné kategórie s drag & drop zoradením
 - **Nákupný režim** — zjednodušené zobrazenie dashboard karty pri nakupovaní - ručne alebo automatizáciou
@@ -28,7 +28,7 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 
 ### Manuálna inštalácia
 
-1. Stiahni poslednú verziu z [Releases](https://github.com/GegoSK/shopping-list-plus/releases)
+1. Stiahni poslednú verziu.
 2. Skopíruj `custom_components/shopping_list_plus/` do `/config/custom_components/`
 3. Skopíruj `www/community/shopping-list-card/` do `/config/www/community/`
 4. Reštartuj Home Assistant
@@ -71,8 +71,6 @@ todo_entity: todo.nakupny_zoznam
 
 | Možnosť | Popis | Default |
 |---------|-------|---------|
-| `todo_entity` | HA todo entita (povinné) | — |
-| `favorites_file` | Cesta k JSON súboru | `/config/shopping_favorites.json` |
 | `product_size` | Výška tlačidiel `s/m/l` | `m` |
 | `icon_size` | Veľkosť ikon `s/m/l` | `m` |
 | `grid_columns` | Počet stĺpcov produktov | `4` |
@@ -81,7 +79,6 @@ todo_entity: todo.nakupny_zoznam
 | `accent_color` | Farba zvýraznenia | — |
 | `show_cart_icon` | Ikona košíka pri kúpenom | `true` |
 | `show_icons_in_list` | Ikony v nákupnom zozname | `false` |
-| `barcode_webhook` | Webhook ID pre skener | `shopping_barcode_scan` |
 
 ---
 
@@ -99,12 +96,6 @@ Integrácia prijíma čiarové kódy cez webhook. Companion app posiela POST req
 Ak je čiarový kód známy — produkt sa pridá do nákupného zoznamu.
 Ak nie — uloží sa do **Pending** zoznamu na neskoršie priradenie.
 
-### Nastavenie v Companion app
-
-Vytvor automatizáciu v Companion app ktorá posiela naskenovaný kód na:
-```
-https://[HA_URL]/api/webhook/shopping_barcode_scan
-```
 
 ---
 
