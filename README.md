@@ -7,8 +7,8 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 ## Funkcie
 
 - **Vlastný panel** — plnohodnotný správca produktov priamo v HA
-- **Dashboard karta** — kompaktná karta pre dashboard
-- **Skener čiarových kódov** — cez kameru mobilu (Android Companion app)
+- **Dashboard karta** — plne uživateľsky upraviteľná kompaktná karta pre dashboard, umožňuje zobraziť všetko alebo kategórie produktov, zobrazuje nákupny zoznam s extra funkciami
+- **Skener čiarových kódov** — cez kameru mobilu (zatiaľ len Android Companion app), rôzna odozva na načítaný čiarový kód
 - **Produkty s variantmi** — umožňuje vyplniť rôzne varianty produktu, rôznych výrobcov rovnakého produktu, kusy, objem alebo urobiť skupinu podobných produktov, napr. "Kuriacie mäso" varianty - "Krídla", "Stehná", umožňuje pridadiť viac čiarovýc hkódov k jednému variantu
 - **Obľúbené položky** — rýchly prístup k často kupovaným produktom
 - **Kategórie** — farebné kategórie s drag & drop zoradením
@@ -51,7 +51,7 @@ Pri pridávaní integrácie vyplň:
 | Pole | Popis | Default |
 |------|-------|---------|
 | **Nákupný zoznam** | HA `todo` entita | — |
-| **Webhook ID** | ID pre príjem čiarových kódov | `shopping_barcode_scan` |
+| **Webhook ID** | Vlastný unikátny ID pre príjem čiarových kódov | `shopping_barcode_scan` |
 | **Súbor produktov** | Cesta k JSON databáze | `/config/shopping_favorites.json` |
 | **Priečinok ikon** | Cesta k vlastným ikonám | `/config/custom_components/shopping_list_plus/icons` |
 | **Notify služba** | Companion app služba pre TTS/vibrácie | — |
