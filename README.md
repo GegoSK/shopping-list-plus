@@ -48,10 +48,10 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 
 Pri pridávaní integrácie vyplň:
 
-| Pole | Popis | Default |
+| Pole | Popis | Predvolené |
 |------|-------|---------|
 | **Nákupný zoznam** | HA `todo` entita | — |
-| **Webhook ID** | Vlastný unikátny ID pre príjem čiarových kódov | `shopping_barcode_scan` |
+| **Webhook ID** | Vlastný unikátny ID pre príjem čiarových kódov. Predvolený je treba zmeniť | `shopping_barcode_scan` |
 | **Súbor produktov** | Cesta k JSON databáze | `/config/shopping_favorites.json` |
 | **Priečinok ikon** | Cesta k vlastným ikonám | `/config/custom_components/shopping_list_plus/icons` |
 | **Notify služba** | Companion app služba pre TTS/vibrácie | — |
@@ -69,7 +69,7 @@ todo_entity: todo.nakupny_zoznam
 
 ### Možnosti karty
 
-| Možnosť | Popis | Default |
+| Možnosť | Popis | Predvolené |
 |---------|-------|---------|
 | `product_size` | Výška tlačidiel `s/m/l` | `m` |
 | `icon_size` | Veľkosť ikon `s/m/l` | `m` |
@@ -89,12 +89,12 @@ Integrácia prijíma čiarové kódy cez webhook. Companion app posiela POST req
 ```json
 {
   "barcode": "1234567890",
-  "name": ""
+  "name": "Mlieko"
 }
 ```
 
-Ak je čiarový kód známy — produkt sa pridá do nákupného zoznamu.
-Ak nie — uloží sa do **Pending** zoznamu na neskoršie priradenie.
+Ak je čiarový kód známy — produkt sa automaticky pridá do nákupného zoznamu.
+Ak nie — uloží sa do **Pending** zoznamu na neskoršie priradenie k existujúcemu alebo novému produktu.
 
 
 ---
