@@ -60,11 +60,28 @@ Pri pridávaní integrácie vyplň:
 
 ## Dashboard karta
 
-Pridaj kartu do dashboardu:
+Pridaj kartu do dashboardu cez UI alebo vlož do yaml:
 
 ```yaml
 type: custom:shopping-list-card
-todo_entity: todo.nakupny_zoznam
+accent_color: "#4fbce3"
+show_favorites: true
+show_add_input: true
+show_list: true
+show_completed: false
+show_icons_in_list: true
+show_category_badge: true
+sort_by_category: true
+grid_columns: 6
+purchase_delay: 3
+accent_text_color: "#ffffff"
+show_nocat: true
+show_cart_icon: true
+show_shopping_mode_btn: true
+product_size: s
+icon_size: m
+variant_select_delay: 2
+
 ```
 
 ### Možnosti karty
