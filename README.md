@@ -13,7 +13,7 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 - **Obľúbené položky** — rýchly prístup k často kupovaným produktom
 - **Kategórie** — farebné kategórie s drag & drop zoradením
 - **Nákupný režim** — zjednodušené zobrazenie dashboard karty pri nakupovaní - ručne alebo automatizáciou
-- **Vlastné ikony** — PNG/SVG ikony pre produkty
+- **Vlastné ikony** — PNG, JPG, GIF, SVG, WEBP ikony pre produkty
 
 ---
 
