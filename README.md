@@ -131,6 +131,12 @@ Samostatne nastaviteľné pre **nájdený** a **neznámy** čiarový kód.
 
 ---
 
+## Preklady
+
+Ak chcete mať integráciu vo vlastnom jazyku, preložte texty v súbore **translations/en.json** a zdieľajte. 
+
+---
+
 ## Licencia
 
 MIT License — voľné použitie a úpravy.
