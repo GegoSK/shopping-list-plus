@@ -1,4 +1,4 @@
-# 🛒 Shopping List Plus
+# <img src="icon.png" width="40" alt="Shopping List Plus" /> Shopping List Plus
 
 Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou pre dashbaord, skenerom čiarových kódov a podporou produktov s variantmi.
 
