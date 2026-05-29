@@ -1,6 +1,6 @@
 # <img src="icon.png" width="40" alt="Shopping List Plus" /> Shopping List Plus
 
-Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou pre dashbaord, skenerom čiarových kódov a podporou produktov s variantmi.
+Integrácia nákupného zoznamu pre Home Assistant s vlastným **panelom**, **kartou pre dashbaord**, **skenerom čiarových kódov** a podporou produktov s variantmi.
 
 ---
 
@@ -8,7 +8,8 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným panelom, kartou p
 
 - **Vlastný panel** — plnohodnotný správca produktov priamo v HA
 - **Dashboard karta** — plne uživateľsky upraviteľná kompaktná karta pre dashboard, umožňuje zobraziť všetko alebo kategórie produktov, zobrazuje nákupny zoznam s extra funkciami
-- **Skener čiarových kódov** — cez kameru mobilu (zatiaľ len Android Companion app), rôzna odozva na načítaný čiarový kód
+- **Skener čiarových kódov v karte** — cez kameru mobilu (zatiaľ len Android Companion app), známe čiarové kódy pridáva do nákupného zoznamu, neznáme pridáva do databázy produktov
+- **Skener čiarových kódov v panely** — cez kameru mobilu (zatiaľ len Android Companion app), na známe čiarové kódy upozorní, neznáme pridáva do databázy produktov
 - **Produkty s variantmi** — umožňuje vyplniť rôzne varianty produktu, rôznych výrobcov rovnakého produktu, kusy, objem alebo urobiť skupinu podobných produktov, napr. "Kuriacie mäso" varianty - "Krídla", "Stehná", umožňuje pridadiť viac čiarovýc hkódov k jednému variantu
 - **Obľúbené položky** — rýchly prístup k často kupovaným produktom
 - **Kategórie** — farebné kategórie s drag & drop zoradením
