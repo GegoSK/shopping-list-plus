@@ -114,7 +114,17 @@ Integrácia prijíma čiarové kódy cez webhook. Companion app posiela POST req
 Ak je čiarový kód známy — produkt sa automaticky pridá do nákupného zoznamu.
 Ak nie — uloží sa do **Pending** zoznamu na neskoršie priradenie k existujúcemu alebo novému produktu.
 
+Nacitaný čiarový kód sa posiela cez Event, ktorý je možné využiť v automatizáciach. Napríklad: 
 
+```yaml
+trigger:
+  - platform: event
+    event_type: shopping_list_plus_barcode_scanned
+action:
+  - service: rohlikcz.add_to_cart
+    data:
+      barcode: "{{ trigger.event.data.barcode }}"
+```
 ---
 
 ## Odozva pri skenovaní
