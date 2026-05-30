@@ -121,7 +121,7 @@ triggers:
   - trigger: event
     event_type: shopping_list_plus_barcode_scanned
 actions:
-  - action: rohlikcz.add_to_cart
+  - action: nejaká akcia (napríklad rohlikcz.add_to_cart z integrácie HA-RohlikCZ https://github.com/dvejsada/HA-RohlikCZ)
     data:
       barcode: "{{ trigger.event.data.barcode }}"
 ```
