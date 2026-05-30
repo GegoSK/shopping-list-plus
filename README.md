@@ -138,6 +138,11 @@ Ak chcete mať integráciu vo vlastnom jazyku, preložte texty v súbore **trans
 
 ---
 
+## Claude
+
+Táto integrácia bola vytvorené s pomocou Claude AI. 
+
+---
 ## Licencia
 
 MIT License — voľné použitie a úpravy.
