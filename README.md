@@ -1,6 +1,6 @@
 # <img src="icon.png" width="40" alt="Shopping List Plus" /> Shopping List Plus
 
-Integrácia nákupného zoznamu pre Home Assistant s vlastným **panelom**, **kartou pre dashbaord**, **skenerom čiarových kódov** a podporou produktov s variantmi.
+Integrácia nákupného zoznamu pre Home Assistant s vlastným **panelom**, **kartou pre dashbaord**, **skenerom čiarových kódov**, **Andorid aplikáciou s widgetom** a podporou produktov s variantmi.
 
 ---
 
@@ -15,6 +15,7 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným **panelom**, **ka
 - **Kategórie** — farebné kategórie s drag & drop zoradením
 - **Nákupný režim** — zjednodušené zobrazenie dashboard karty pri nakupovaní - ručne alebo automatizáciou
 - **Vlastné ikony produktov** — vo formáte PNG, JPG, GIF, SVG, WEBP
+- **Andorid aplikácia s widgetom** — nákupný zoznam v aplikácií a na ploche andoridu s rovnakými funkciami ako nákupný zpoznam v dashboard karte
 
 ---
 
@@ -35,13 +36,15 @@ Integrácia nákupného zoznamu pre Home Assistant s vlastným **panelom**, **ka
 4. Reštartuj Home Assistant
 5. Pridaj integráciu: **Nastavenia → Zariadenia & služby → Pridať integráciu → Shopping List Plus**
 
-### Cez HACS
+### Cez HACS (zatiaľ nefunkčné)
 
 1. Otvor HACS → **Vlastné repozitáre**
 2. Pridaj URL: `https://github.com/GegoSK/shopping-list-plus`
 3. Kategória: **Integrácia**
 4. Nainštaluj **Shopping List Plus**
-5. Reštartuj Home Assistant
+5. Pridaj URL: `https://github.com/GegoSK/shopping-list-plus`
+6. Kategória: **Dashboard**
+7. Reštartuj Home Assistant
 
 ---
 
@@ -56,6 +59,7 @@ Pri pridávaní integrácie vyplň:
 | **Súbor produktov** | Cesta k JSON databáze | `/config/shopping_favorites.json` |
 | **Priečinok ikon** | Cesta k vlastným ikonám | `/config/custom_components/shopping_list_plus/icons` |
 | **Notify služba** | Companion app služba pre TTS/vibrácie | — |
+| **Nákupná entita** | input_boolean entita, ktorou sa dá prepínať nákupný režim a režim pridávania produktov v dashboard karte (input_boolean entita sa prepne pomocou automatizácie) | — |
 
 ---
 
